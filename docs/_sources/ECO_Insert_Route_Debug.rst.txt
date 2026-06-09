@@ -55,8 +55,8 @@ Start by cloning and entering the tutorial repository:
 
 .. code-block:: bash
 
-    git clone https://github.com/eddieh-xlnx/eco_insert_route_debug
-    cd eco_insert_route_debug
+    git clone https://github.com/Xilinx/RapidWrightECO
+    cd RapidWrightECO
 
 This repository contains:
 

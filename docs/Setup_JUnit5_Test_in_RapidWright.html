@@ -309,7 +309,7 @@ parts of RapidWright can exceed that limit. You should keep this limitation in m
 <p>To identify issues with files being left open, there is a JUnit extension that compares the list of open files before and after a testcase. It will fail the testcase if there are changes. This extension (<code class="docutils literal notranslate"><span class="pre">com.xilinx.rapidwright.support.CheckOpenFilesExtension</span></code>) is automatically registered when JUnit tests are run with Gradle.</p>
 <div class="section" id="testcase-dcps">
 <h3>Testcase DCPs<a class="headerlink" href="#testcase-dcps" title="Permalink to this headline">¶</a></h3>
-<p>Tests requiring new DCP(s) will need to fork the <a class="reference external" href="https://github.com/eddieh-xlnx/RapidWrightDCP">RapidWrightDCP</a> repository to gain write permissions.</p>
+<p>Tests requiring new DCP(s) will need to fork the <a class="reference external" href="https://github.com/Xilinx/RapidWrightDCP">RapidWrightDCP</a> repository to gain write permissions.</p>
 <p>The DCP(s) to be added should have no encrypted components inside and
 the EDIF inside the DCP should be readable (not encrypted).  A
 readable EDIF file can be generated using Vivado either <a class="reference external" href="http://www.rapidwright.io/javadoc/com/xilinx/rapidwright/design/Design.html#RW_AUTO_GENERATE_READABLE_EDIF">automatically</a>

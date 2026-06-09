@@ -121,7 +121,7 @@ To identify issues with files being left open, there is a JUnit extension that c
 Testcase DCPs
 ^^^^^^^^^^^^^
 
-Tests requiring new DCP(s) will need to fork the `RapidWrightDCP <https://github.com/eddieh-xlnx/RapidWrightDCP>`_ repository to gain write permissions.
+Tests requiring new DCP(s) will need to fork the `RapidWrightDCP <https://github.com/Xilinx/RapidWrightDCP>`_ repository to gain write permissions.
 
 The DCP(s) to be added should have no encrypted components inside and
 the EDIF inside the DCP should be readable (not encrypted).  A
