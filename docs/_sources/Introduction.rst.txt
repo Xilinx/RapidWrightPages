@@ -8,17 +8,17 @@ What is RapidWright?
 ===============================
 RapidWright is an open source Java framework that enables
 netlist and implementation manipulation of 
-modern Xilinx FPGA and SoC designs.  It compliments `Xilinx's Vivado® Design Suite <https://www.xilinx.com/products/design-tools/vivado.html>`_ and provides
+modern AMD FPGA and adaptive SoC designs.  It complements the `AMD Vivado™ Design Suite <https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vivado.html>`_ and provides
 developers with capabilities such as:
 
  * Fast loading accurate device model views for all Vivado-supported
-   Xilinx devices (`Series 7 <https://www.xilinx.com/products/silicon-devices/fpga.html>`_, `UltraScale™ <https://www.xilinx.com/about/generation-ahead-16nm.html>`_, and `UltraScale+™ <https://www.xilinx.com/about/generation-ahead-16nm.html>`_)
+   AMD devices (`Series 7, UltraScale™, UltraScale+™ <https://www.amd.com/en/products/adaptive-socs-and-fpgas/fpga.html>`_, and `Versal™ <https://www.amd.com/en/products/adaptive-socs-and-fpgas/versal.html>`_)
  * Reads and writes unencrypted Vivado Design Checkpoint files (.dcp)
  * Hundreds of APIs to help build customized solutions to a wide variety
    of implementation challenges
  * Examples of how to pre-implement (pre-place and pre-route) IP, relocate such blocks and compose pre-implemented blocks together
  
-.. note:: RapidWright is not an official product from Xilinx and designs created or derived from it are not warranted. Please see `LICENSE.TXT <https://github.com/Xilinx/RapidWright/blob/master/LICENSE.TXT>`_ for full details.
+.. note:: RapidWright is not an official product from AMD and designs created or derived from it are not warranted. Please see `LICENSE.TXT <https://github.com/Xilinx/RapidWright/blob/master/LICENSE.TXT>`_ for full details.
 
 Why RapidWright?
 ===============================
@@ -61,8 +61,8 @@ designs.
 
 Vivado and RapidWright
 ===============================
-The `Vivado Design Suite <https://www.xilinx.com/products/design-tools/vivado.html>`_ is the tool environment for developing and
-implementing designs for Xilinx FPGAs and SoCs. Vivado provides both a GUI environment and a Tcl scripting interface to control the various tools and steps involved in development.  The Tcl scripting interface is quite powerful in that it provides users with hundreds of commands to manipulate their design.  However, despite the breadth of functionality that the Tcl interface offers, it does have some shortcomings.
+The `Vivado Design Suite <https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vivado.html>`_ is the tool environment for developing and
+implementing designs for AMD FPGAs and adaptive SoCs. Vivado provides both a GUI environment and a Tcl scripting interface to control the various tools and steps involved in development.  The Tcl scripting interface is quite powerful in that it provides users with hundreds of commands to manipulate their design.  However, despite the breadth of functionality that the Tcl interface offers, it does have some shortcomings.
 
  * First, some tasks that a user would want to complete using Tcl constructs and commands takes an inordinate amount of runtime making the task infeasible, especially for large designs.  For example, attempting to import routing information via Tcl commands for a full design can take several hours or days.   
  * Second, constructing large, complex operations out of Tcl commands can be inefficient due to its interpreted nature.  Many users would also prefer a more mainstream object oriented language with wider support for developing solutions.

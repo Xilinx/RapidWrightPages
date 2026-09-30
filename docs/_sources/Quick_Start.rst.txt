@@ -4,21 +4,22 @@ Quick Start
 
 .. note:: The only major prerequisite is Java (1.8 minimum, 11 or later recommended) - Any distribution such as `Adoptium <https://adoptium.net/>`_ should work
 
-Download and run the latest stand-alone RapidWright release jar file: `Linux <https://github.com/Xilinx/RapidWright/releases/download/v2023.1.0-beta/rapidwright-2023.1.0-standalone-lin64.jar>`_ | `Windows <https://github.com/Xilinx/RapidWright/releases/download/v2023.1.0-beta/rapidwright-2023.1.0-standalone-win64.jar>`_: 
+Download and run the stand-alone RapidWright jar file (``rapidwright-<version>-standalone-lin64.jar`` or ``rapidwright-<version>-standalone-win64.jar``) from the `latest RapidWright release on GitHub <https://github.com/Xilinx/RapidWright/releases/latest>`_, or use the commands below to fetch it automatically:
 
 **Linux:**
 
 .. code-block:: bash
 
-  wget https://github.com/Xilinx/RapidWright/releases/download/v2023.1.0-beta/rapidwright-2023.1.0-standalone-lin64.jar
-  java -jar rapidwright-2023.1.0-standalone-lin64.jar
+  wget -O rapidwright-standalone-lin64.jar $(curl -s https://api.github.com/repos/Xilinx/RapidWright/releases/latest | grep -o 'https://[^"]*standalone-lin64\.jar')
+  java -jar rapidwright-standalone-lin64.jar
 
-**Windows:** 
+**Windows (PowerShell):**
 
-.. code-block:: bat
+.. code-block:: powershell
 
-  curl -L -O https://github.com/Xilinx/RapidWright/releases/download/v2023.1.0-beta/rapidwright-2023.1.0-standalone-win64.jar
-  java -jar rapidwright-2023.1.0-standalone-win64.jar
+  $url = (Invoke-RestMethod https://api.github.com/repos/Xilinx/RapidWright/releases/latest).assets.browser_download_url | Where-Object { $_ -like '*standalone-win64.jar' }
+  Invoke-WebRequest $url -OutFile rapidwright-standalone-win64.jar
+  java -jar rapidwright-standalone-win64.jar
 
 This will start the RapidWright `Jython <http://www.jython.org>`_ (Python 2 in Java) interpreter with most RapidWright classes loaded.  You can test your install by running the following at the prompt:
 

@@ -40,7 +40,7 @@ The 'Rapid' portion is to indicate speed and efficiency. It also provides some r
 
 Can RapidWright generate bitstreams?
 ============================================
-No. There is currently no bitstream information in RapidWright.  Any designs will need to be put back into Vivado for DRC and bitstream generation.
+No. RapidWright does not contain the information needed to translate a placed and routed design into a bitstream, so any designs will need to be put back into Vivado for DRC and bitstream generation.  However, RapidWright can parse and make certain modifications to existing Vivado-generated bitstreams (see :ref:`Bitstream Manipulation`).
 
 Does RapidWright provide device timing information?
 ====================================================
@@ -53,6 +53,6 @@ RapidWright does not have specific support for PR, but it can be used to generat
 
 Is there any published work on RapidWright?
 =============================================
-Yes, we had a paper at `FCCM 2018 <http://fccm.org/2018/program.html#program>`_ (The 26th IEEE International Symposium on Field-Programmable Custom Computing Machines).  A preprint copy of the paper is available here: :download:`FCCM18-RapidWright.pdf <files/FCCM18-RapidWright.pdf>`. The presentation slides are avilable here: :download:`FCCM18-RapidWright-Presentation.pdf <files/FCCM18-RapidWright-Presentation.pdf>`.
+Yes, the original RapidWright paper was published at `FCCM 2018 <http://fccm.org/2018/program.html#program>`_ (The 26th IEEE International Symposium on Field-Programmable Custom Computing Machines).  A preprint copy of the paper is available here: :download:`FCCM18-RapidWright.pdf <files/FCCM18-RapidWright.pdf>`. The presentation slides are available here: :download:`FCCM18-RapidWright-Presentation.pdf <files/FCCM18-RapidWright-Presentation.pdf>`.  Many additional papers, both from the RapidWright team and the broader community, are listed in :ref:`RapidWright Publications`.
 
 

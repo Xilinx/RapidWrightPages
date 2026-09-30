@@ -104,13 +104,13 @@ for the ``xc7a100t`` and ``xc7a200t`` devices, run:
 
 .. code-block:: bash
 
-    rapidwright jython -c "FileTools.ensureDataFilesAreStaticInstallFriendly("xc7a100t", "xc7a200t")'
+    rapidwright jython -c 'FileTools.ensureDataFilesAreStaticInstallFriendly("xc7a100t", "xc7a200t")'
 
 
 Another option to avoid on-demand download is to obtain the 
 ``rapidwright_data.zip`` file associated with the current release 
 (see assets from the corresponding 
-`GitHub Releases<https://github.com/Xilinx/RapidWright/releases>`_) 
+`GitHub Releases <https://github.com/Xilinx/RapidWright/releases>`_) 
 and replace the ``data`` directory in the ``RapidWright`` directory with its contents.
 
 .. note:: Due to GitHub size limitations, 2022.1.0 to 2022.2.3 and

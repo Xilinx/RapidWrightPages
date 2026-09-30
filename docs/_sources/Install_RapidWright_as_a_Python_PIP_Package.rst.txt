@@ -55,8 +55,8 @@ Setting up a Virtual Python Environment
 
 The Python module used to create a virtual environment is called
 ``venv``.  For more details about configuring a virtual
-environment, please refer to the ```venv`` documentation
-<https://www.graalvm.org/reference-manual/python/>`_. The default
+environment, please refer to the `venv documentation
+<https://docs.python.org/3/library/venv.html>`_. The default
 settings of a virtual environment can be set up with the following
 command:
 

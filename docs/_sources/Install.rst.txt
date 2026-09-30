@@ -130,11 +130,11 @@ RapidWright aims to be as compatible as possible with Vivado in terms of the dev
 it offers and its ability to load design checkpoints (DCPs) as far back as 2018.2.    
 
 RapidWright versioning intends to indicate to the user what the latest version of Vivado 
-for which it will be compatible.  For example, RapidWright 2023.1.0 will be compatible 
-with Vivado 2023.1 and previous versions back to 2018.2.  Conversely, a DCP created in 
-Vivado 2023.1 will likely not be readable in previous versions of RapidWright 
-(2022.2.0, 2022.1.0, etc).  This also is true for device models.  If a device is released 
-in Vivado 2023.1, it won't be available in previous versions of RapidWright.       
+for which it will be compatible.  For example, RapidWright 2026.1.0 will be compatible 
+with Vivado 2026.1 and previous versions back to 2018.2.  Conversely, a DCP created in 
+Vivado 2026.1 will likely not be readable in previous versions of RapidWright 
+(2025.2.2, 2025.1.0, etc).  This also is true for device models.  If a device is released 
+in Vivado 2026.1, it won't be available in previous versions of RapidWright.       
 
 Notes for Advanced/Legacy Users:
 =====================================

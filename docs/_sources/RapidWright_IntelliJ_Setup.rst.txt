@@ -4,7 +4,7 @@ RapidWright IntelliJ Setup
 
 Step-by-Step Instructions
 ===============================
-1. Make sure you have Java JDK 1.8 (or later) installed: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html Follow the instructions when running the downloaded executable.  Add the ``$(YOUR_JDK_INSTALL_LOCATION)/jdk1.x.x_x/bin`` folder to your ``PATH`` environment variable. 
+1. Make sure you have a Java JDK installed (1.8 minimum, 11 or later recommended).  Any distribution such as `Adoptium <https://adoptium.net/>`_ should work.  Add the ``bin`` folder of your JDK installation to your ``PATH`` environment variable.
 2. Download IntelliJ: https://www.jetbrains.com/idea/download/
 3. Install IntelliJ by running the setup executable.
 4. Start IntelliJ, and naviagate through setting selection (if necessary) to the welcome screen.
@@ -30,11 +30,7 @@ Step-by-Step Instructions
 
 7. Expand the source tree to navigate to the DeviceBrowser class, ``RapidWright/src/com.xilinx.rapidwright/device/browser/DeviceBrowser`` as shown in the screenshot above.
 
-8. (If running Linux, skip this step).  In Windows, we need to set the GUI library jar to choose the win64 version instead of the lin64 (the default).  In order to do this, Choose ``File->Project Structure...``, then select ``Libraries`` under ``Project Settings`` at the top left.  this should produce a list of jar file names in the right window pane.  Use the ``-`` and ``+`` buttons to remove the ``qtjambi-lin64*.jar`` and replace it with the ``qtjambi-win64*.jar`` respectively:
-
-.. image:: images/intellij_fix_lib.png
-	:width: 600px
-	:align: center
+8. IntelliJ will detect RapidWright's Gradle build and import it automatically.  Gradle downloads all jar dependencies and selects the correct platform-specific GUI library for your OS (Linux or Windows), so no manual library configuration is needed.  If IntelliJ does not import the project automatically, right-click on ``build.gradle`` in the project tree and choose ``Link Gradle Project``.
 
 9. You should now be able to run any of the programs in RapidWright in the IntelliJ environment.  For example, right-click on ``DeviceBrowser`` and choose ``Run DeviceBrowser.main()`` from the menu.  If successful, the DeviceBrowser will run similar to the screenshot below:
 

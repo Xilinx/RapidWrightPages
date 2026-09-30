@@ -13,11 +13,11 @@ Pre-requisites
 Step-by-Step Instructions
 ===============================
 1. Make sure Python and Jupyter Notebook is installed following the `directions provided by project Jupyter <https://jupyter.org/index.html>`_.
-2. If running RapidWright from the standalone jar, run: 
+2. If running RapidWright from the standalone jar (see :ref:`Quick Start`), run: 
 
 .. code-block:: bash
 
-	java -jar rapidwright-2018.3.0-standalone-lin64.jar --create_jupyter_kernel
+	java -jar rapidwright-*-standalone-lin64.jar --create_jupyter_kernel
 
 for all other installs run:
 

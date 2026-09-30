@@ -4,8 +4,8 @@ RapidWright Eclipse Setup
 
 Eclipse Step-by-Step Instructions
 ===================================
-1. Make sure you have Java JDK 1.8 (or later) installed: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html Follow the instructions when running the downloaded executable.  Add the ``$(YOUR_JDK_INSTALL_LOCATION)/jdk1.x.x_x/bin`` folder to your ``PATH`` environment variable. 
-2. Download Eclipse: http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygen2
+1. Make sure you have a Java JDK installed (1.8 minimum, 11 or later recommended).  Any distribution such as `Adoptium <https://adoptium.net/>`_ should work.  Add the ``bin`` folder of your JDK installation to your ``PATH`` environment variable.
+2. Download the latest "Eclipse IDE for Java Developers" package: https://www.eclipse.org/downloads/packages/
 3. Install Eclipse by extracting the archive into a desired folder on your computer 
 4. Run Eclipse (you may want to add the executable to your path) 
 5. In Eclipse, choose the File->Import... menu option.  This will bring up a dialog, choose the Git/Projects from Git option as shown in the screenshot below (click Next):
@@ -43,8 +43,8 @@ Setup Eclipse with Existing Repo
 ==================================
 If you already have the RapidWright repository checked out, you can import it into an Eclipse workspace by following these steps (you can skip to Step 5 if you already have Eclipse installed and open) 
 
-1. Make sure you have Java JDK 1.8 (or later) installed: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html Follow the instructions when running the downloaded executable.  Add the ``$(YOUR_JDK_INSTALL_LOCATION)/jdk1.x.x_x/bin`` folder to your ``PATH`` environment variable. 
-2. Download Eclipse: http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygen2
+1. Make sure you have a Java JDK installed (1.8 minimum, 11 or later recommended).  Any distribution such as `Adoptium <https://adoptium.net/>`_ should work.  Add the ``bin`` folder of your JDK installation to your ``PATH`` environment variable.
+2. Download the latest "Eclipse IDE for Java Developers" package: https://www.eclipse.org/downloads/packages/
 3. Install Eclipse by extracting the archive into a desired folder on your computer 
 4. Run Eclipse (you may want to add the executable to your path) 
 5. In Eclipse, choose the File->Import... menu option.  This will bring up a dialog, choose the Git/Projects from Git option as shown in the screenshot below (click Next):
